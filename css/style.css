@@ -121,7 +121,7 @@
 }
 .section-text-wrapper{
   height: 28rem;
-  background-image: url('/images/cuchara.jpg');
+  background-image: url('images/cuchara.jpg');
   background-repeat: no-repeat;
   background-size:contain;
 }
