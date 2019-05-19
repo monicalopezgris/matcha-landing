@@ -135,13 +135,13 @@ table {
   background-size:contain;
 }
 .section-one .section-header{
-  background-image: url('images/1.png');
+  background-image: url('../images/1.png');
 }
 .section-two .section-header{
-  background-image: url('images/2.png');
+  background-image: url('../images/2.png');
 }
 .section-three .section-header{
-  background-image: url('images/3.png');
+  background-image: url('../images/3.png');
 }
 .section-title{
   font-size:2.2rem;
@@ -168,7 +168,7 @@ table {
 }
 .section-text-wrapper{
   height: 28rem;
-  background-image: url('images/cuchara.jpg');
+  background-image: url('../images/cuchara.jpg');
   background-repeat: no-repeat;
   background-size:contain;
 }
