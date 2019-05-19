@@ -6,3 +6,10 @@
 
 @import './sections.css';
 @import './card.css';
+
+
+.footer{
+  height: 2rem;
+  width: 100%;
+  background-color: #FCD2C1;
+}
