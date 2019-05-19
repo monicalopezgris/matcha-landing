@@ -1,1 +1,8 @@
-@import './reset.css'
+@import './reset.css';
+
+
+
+
+
+@import './sections.css';
+@import './card.css';
