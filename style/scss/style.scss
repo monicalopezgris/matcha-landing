@@ -1,4 +1,5 @@
-@import './reset.css';
+@import 'reset';
+@import 'variables';
 
 .nav-section {
   background-color: #fbfbfb;
@@ -6,76 +7,102 @@
   height: 3rem;
   display: flex;
   justify-content: space-between;
-}
 
-.nav-section img {
-  width: 12%;
-  margin-left: 1.0rem;
-  margin-right: 1rem;
+  img {
+    width: 12%;
+    margin-left: 1.0rem;
+    margin-right: 1rem;
+  }
 }
 
 .main-section {
   background-color: #fcd2c1;
-  height: 100vh;
-}
+  height: auto;
+  padding-bottom: 1rem;
 
+  .main-image {
+    width: 70%;
+    margin-left: 4.2rem;
+    margin-top: 0.5rem;
+  }
+  
+}
+@media screen and (min-width: $break-large) {
+  .main-article {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .main-image{
+      width: 30%;
+      flex-grow: 1;
+    }
+  }
+  .main-card {
+    width: 20%;
+    flex-grow: 2;
+    h1 {
+      display: none;
+    }
+    h2 {
+      font-size: $font-size-xl;
+    }
+    p {
+      text-align: left;
+    }
+  }
+
+}
 .main-card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   font-family: 'EB Garamond', serif;
-  margin-top: 0;
+  margin: 0 1rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.1px;
-  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
   color: #444444;
-}
 
-.main-card h1{
-  font-size: 50px;
-  margin-top: -1rem;
-}
+  h1{
+    font-size: 50px;
+    margin-top: -1rem;
+  }
 
-.main-card h2{
-  font-size: 30px;
-  margin-top: 0rem;
-}
+  h2{
+    font-size: $font-size-lg;
+    margin-top: 0rem;
+  }
 
-.main-card p{
-  font-size: 16px;
-  width: 88%;
-  margin-top: 0.8rem;
-  text-align: center;
-}
+  p{
+    font-size: 16px;
+    margin-top: 0.8rem;
+  }
 
-.main-image {
-  width: 70%;
-  margin-left: 4.2rem;
-  margin-top: 0.5rem;
-}
+  #main-pack {
+    font-size: 20px;
+    align-self: center;
+  }
 
-#main-pack {
-  font-size: 20px;
 }
-
 .main-div-button {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-}
+  align-self: center;
 
-.main-button {
-  width: 140px;
-  height: 52px;
-  object-fit: contain;
-  border-radius: 15px;
-  background-color: #444444;
-  font-family: 'EB Garamond', serif;
-  color: white;
-  font-size: 20px;
+  .main-button {
+    width: 140px;
+    height: 52px;
+    object-fit: contain;
+    border-radius: 15px;
+    background-color: #444444;
+    font-family: 'EB Garamond', serif;
+    color: white;
+    font-size: 20px;
+  }
 }
 
 .section {
