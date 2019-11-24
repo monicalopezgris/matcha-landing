@@ -27,32 +27,7 @@
   }
   
 }
-@media screen and (min-width: $break-large) {
-  .main-article {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    .main-image{
-      width: 30%;
-      flex-grow: 1;
-    }
-  }
-  .main-card {
-    width: 20%;
-    flex-grow: 2;
-    h1 {
-      display: none;
-    }
-    h2 {
-      font-size: $font-size-xl;
-    }
-    p {
-      text-align: left;
-    }
-  }
 
-}
 .main-card {
   font-family: 'EB Garamond', serif;
   margin: 0 1rem;
@@ -105,9 +80,47 @@
   }
 }
 
+@media screen and (min-width: $break-large) {
+  .main-article {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .main-image{
+      width: 30%;
+      flex-grow: 1;
+    }
+  }
+  .main-card {
+    width: 20%;
+    flex-grow: 2;
+    h1 {
+      display: none;
+    }
+    h2 {
+      font-size: $font-size-xl;
+    }
+    p {
+      text-align: left;
+    }
+  }
+}
+
+
+//  SECTIONS
 .section {
   margin: 2.5rem 2rem;
   font-family: 'EB Garamond', serif;
+}
+@media screen and (min-width: $break-large) {
+  .section-container{
+    display: flex;
+    flex-direction: row;
+    .section{
+      height: auto;
+      flex-grow: 1;
+    }
+  }
 }
 .section-header{
   padding: 1rem 0;
