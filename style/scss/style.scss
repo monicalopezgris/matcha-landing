@@ -2,21 +2,21 @@
 @import 'variables';
 
 .nav-section {
-  background-color: #fbfbfb;
+  background-color: $color-white;
   width: 100%;
   height: 3rem;
   display: flex;
   justify-content: space-between;
 
   img {
-    width: 12%;
+    width: 50px;
     margin-left: 1.0rem;
     margin-right: 1rem;
   }
 }
 
 .main-section {
-  background-color: #fcd2c1;
+  background-color: $color-secondary;
   height: auto;
   padding-bottom: 1rem;
 
@@ -29,7 +29,7 @@
 }
 
 .main-card {
-  font-family: 'EB Garamond', serif;
+  font-family: $font-slack;
   margin: 0 1rem;
   font-weight: normal;
   font-style: normal;
@@ -42,7 +42,7 @@
   color: #444444;
 
   h1{
-    font-size: 50px;
+    font-size: $font-size-xl;
     margin-top: -1rem;
   }
 
@@ -74,8 +74,8 @@
     object-fit: contain;
     border-radius: 15px;
     background-color: #444444;
-    font-family: 'EB Garamond', serif;
-    color: white;
+    font-family: $font-slack;
+    color: $color-white;
     font-size: 20px;
   }
 }
@@ -110,7 +110,7 @@
 //  SECTIONS
 .section {
   margin: 2.5rem 2rem;
-  font-family: 'EB Garamond', serif;
+  font-family: $font-slack;
 }
 @media screen and (min-width: $break-large) {
   .section-container{
@@ -157,7 +157,7 @@
   justify-content: center;
 }
 .container{
-  background-color:#FBFBFB;
+  background-color:$color-white;
 }
 .section-text-wrapper{
   height: 28rem;
@@ -169,5 +169,5 @@
 .footer{
   height: 2rem;
   width: 100%;
-  background-color: #FCD2C1;
+  background-color: $color-secondary;
 }
